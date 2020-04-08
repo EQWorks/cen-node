@@ -1,6 +1,6 @@
 {
   "name": "cen-node",
-  "description": "CEN protocol implementation in Node.js, with utils and Express.js middlewares",
+  "description": "CEN API implementation in Node.js.",
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
