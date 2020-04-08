@@ -12,7 +12,7 @@ Express.js compatible HTTP middleware
 
 ```js
 const express = require('express')
-const { postCENReportReq, postCENReport } = require('cen-node')
+const { postCENReportReq, postCENReport } = require('@eqworks/cen-node')
 
 // your own report persistence implementation
 const { saveReport } = require('./db')

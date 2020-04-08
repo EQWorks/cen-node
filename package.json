@@ -1,5 +1,5 @@
 {
-  "name": "cen-node",
+  "name": "@eqworks/cen-node",
   "description": "CEN API implementation in Node.js.",
   "version": "0.1.0",
   "main": "index.js",
