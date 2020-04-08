@@ -4,6 +4,14 @@ TCN (CEN) API implementation in Node.js.
 
 WIP, referencing [https://github.com/Co-Epi/coepi-backend-aws](https://github.com/Co-Epi/coepi-backend-aws)
 
+```shell
+% yarn add @eqworks/cen-node
+
+# or
+
+% npm install @eqworks/cen-node
+```
+
 ## utils
 
 ## middleware
