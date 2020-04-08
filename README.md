@@ -1,8 +1,8 @@
 # CEN-node
 
-CEN API implementation in Node.js.
+TCN (CEN) API implementation in Node.js.
 
-WIP, based on [https://github.com/Co-Epi/cen-server](https://github.com/Co-Epi/cen-server)
+WIP, referencing [https://github.com/Co-Epi/coepi-backend-aws](https://github.com/Co-Epi/coepi-backend-aws)
 
 ## utils
 

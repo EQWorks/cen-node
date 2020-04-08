@@ -15,11 +15,8 @@ const payload = {
 }
 assert.equal(utils.decodeReport(payload.report), reportRaw)
 // payload in Object form
-const reportID = utils.computeHash(payload)
-assert.equal(reportID.length, 64)
-// behavior: payload in JSON string form should have consistent
-// hash generated from Object payload input ^
-assert.equal(utils.computeHash(JSON.stringify(payload)), reportID)
+const reportId = utils.computeHash(payload.report)
+assert.equal(reportId.length, 64)
 
 const unfolded = utils.unfoldReport(payload)
 assert.equal(unfolded.report, reportRaw)
