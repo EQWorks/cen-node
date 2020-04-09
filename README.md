@@ -20,7 +20,7 @@ Express.js compatible HTTP middleware
 
 ```js
 const express = require('express')
-const { postCENReportReq, postCENReport } = require('@eqworks/cen-node')
+const { postReportReq, postReport } = require('@eqworks/cen-node')
 
 // your own report persistence implementation
 const { saveReport } = require('./db')
@@ -28,12 +28,12 @@ const { saveReport } = require('./db')
 const app = express()
 app.use(express.json())
 
-app.post('/cenreport',
+app.post(['/tcnreport', '/cenreport'],
   // middleware to perform preliminary validations
-  postCENReportReq,
+  postReportReq,
   // middleware to populate req._cen
   // with a body of { report, reportID }
-  postCENReport,
+  postReport,
   // your own report persistence routine and response handler
   (req, res, next) => {
     saveReport(req._cen)
