@@ -24,6 +24,11 @@ describe('utils', () => {
     expect(utils.computeHash(report).length).toBe(64)
   })
 
+  test('utils.makeStringArray', () => {
+    expect(utils.makeStringArray('test1, ,,test2').length).toBe(2)
+    expect(utils.makeStringArray(['test1', undefined, ' ', '', 'test2']).length).toBe(2)
+  })
+
   test('utils.unfoldReport', () => {
     const payload = {
       report: utils.encodeReport(reportRaw),
